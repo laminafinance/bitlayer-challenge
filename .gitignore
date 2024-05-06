@@ -1,14 +1,20 @@
+# private
+[init.sh]
+.env
+.secret
+.private
+flat/
+
 # Compiler files
 cache/
 out/
 
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
-
-# Docs
-docs/
-
-# Dotenv file
-.env
+artifacts
+node_modules
+coverage
+coverage.json
+.DS_Store
+compiler_config.json
+.deps
+package-lock.json
+yarn.lock

@@ -23,3 +23,23 @@ remappings = [
 ]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+fs_permissions = [{ access = "read-write", path = ".secret"}, { access ="read", path="./out/"}]
+gas_reports = ["*"]
+ffi = true 
+
+solc = "0.8.20"
+optimize = true
+optimizer_runs = 100000
+via_ir = true
+
+[rpc_endpoints]
+# INFURA_GOERLI_TEST_RPC_URL       = ""
+
+[etherscan]
+# mumbai = { key = "" }
+
+[fmt]
+line_length = 120
+multiline_func_header = "params_first"
+number_underscore="thousands"
+# handle sorting of imports
