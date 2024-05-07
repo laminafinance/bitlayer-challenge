@@ -68,10 +68,26 @@ $ cast --help
 
 The following challenge specified in CHALLENGE.md is devoloped using the Foundry
 
-scripts for testing are ran using the commands
+## scripts for testing are ran using the commands
 
 `forge test` & `forge script/Interact.s.sol:TestInteract --rpc-url {rpc url} --private-key {private key} --broadcast --legacy -vvvv`
 
-scripts for deployment are ran using the command
+## scripts for deployment are ran using the command
 
 `forge script/AccessControl.s.sol:Deploy --rpc-url {rpc url} --private-key {private key} --broadcast --legacy`
+
+All deployed contracts from scripts can be seen in the broadcast folder
+
+
+## For the ethers/js script
+
+`npm i`
+
+`export PRIVATE_KEY=your_private_key_value`
+
+`npx run ethersScript.ts`
+
+
+## verified deployment address
+
+https://testnet-scan.bitlayer.org/address/0x78a02fC3E0aaF8Fe95B63f7025e39bdFd51251de?tab=Contract
