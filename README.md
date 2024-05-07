@@ -64,3 +64,14 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+
+The following challenge specified in CHALLENGE.md is devoloped using the Foundry
+
+scripts for testing are ran using the commands
+
+`forge test` & `forge script/Interact.s.sol:TestInteract --rpc-url {rpc url} --private-key {private key} --broadcast --legacy -vvvv`
+
+scripts for deployment are ran using the command
+
+`forge script/AccessControl.s.sol:Deploy --rpc-url {rpc url} --private-key {private key} --broadcast --legacy`
